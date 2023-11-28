@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="currency.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary navbar-fixed-top" data-bs-theme="dark" >
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">Currency Converter</span>
+        </div>
+      </nav>
+      <div class="card_holder">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h1 class="currency">USD</h1>
+          <label id="usdamount_euro"></label>
+          <label id="usdamount_kshs"></label>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h1 class="currency">EURO</h1>
+            <label id="euroamount_usd"></label>
+            <label id="euroamount_kshs"></label>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+      <div>
+        <h1 class="currency">KSH</h1>
+        <label id="kshsamount_usd"></label>
+        <label id="kshsamount_euro"></label>
+      </div>
+    </div>
+    </div>
+    <div class="convert">
+    <div class="card" style="width: 25rem;">
+        <div class="card-body">
+          <h3 class="card-title">CONVERT NOW</h3><br>
+          <label for="btn-group">From</label>
+      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+        <input type="checkbox" class="btn-check" id="usd_from" autocomplete="off">
+        <label class="btn btn-outline-primary" for="usd_from">US-Dollar</label>
+      
+        <input type="checkbox" class="btn-check" id="euro_from" autocomplete="off">
+        <label class="btn btn-outline-primary" for="euro_from">Euro</label>
+      
+        <input type="checkbox" class="btn-check" id="kshs_from" autocomplete="off">
+        <label class="btn btn-outline-primary" for="kshs_from">Kenyan Shilling</label>
+      </div><br><br>
+      <div class="input-group">
+        <span class="input-group-text">Amount</span>
+        <input type="text" aria-label="First name" class="form-control" id="toconvert_amount">
+      </div>
+
+      <div class="card-body">
+        <label for="btn-group">To  </label>
+    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+      <input type="checkbox" class="btn-check" id="usd_to" autocomplete="off">
+      <label class="btn btn-outline-primary" for="usd_to">US-Dollar</label>
+    
+      <input type="checkbox" class="btn-check" id="euro_to" autocomplete="off">
+      <label class="btn btn-outline-primary" for="euro_to">Euro</label>
+    
+      <input type="checkbox" class="btn-check" id="kshs_to" autocomplete="off">
+      <label class="btn btn-outline-primary" for="kshs_to">Kenyan Shilling</label>
+    </div><br><br>
+    
+    <button type="button" class="btn btn-primary" id="submit">SUBMIT</button><br><br>
+
+    <span class="badge text-bg-primary" id="converted_amount"></span>
+   </div>
+    <script src="currency.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

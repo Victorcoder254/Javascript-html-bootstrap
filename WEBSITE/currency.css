@@ -1,0 +1,19 @@
+.card_holder{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   margin: 0% 2%;
+}
+.card{
+    margin: 1% 3%;
+    text-align: center;
+}
+.convert{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
